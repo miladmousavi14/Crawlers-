@@ -1,0 +1,23 @@
+[
+  {
+    "game_id": "123",
+    "country": "Iran",
+    "teams": ["Team A", "Team B"],
+    "start_time_utc": "2025-07-10T16:30:00Z",
+    "home": { "A": 1.80, "B": 55, "C": 60 },
+    "away": { "A": 3.40, "B": 25, "C": 30 },
+    "status": { "task_1": null, "task_2": null, "task_3": null, "task_4": null },
+    "assigned_to": null      /* ← خزنده‌ای که بازی را گرفت اینجا ID خودش را می‌نویسد */
+  },
+
+  {
+    "game_id": "456",
+    "country": "Germany",
+    "teams": ["Team C", "Team D"],
+    "start_time_utc": "2025-07-10T19:00:00Z",
+    "home": { "A": 2.05, "B": 48, "C": 52 },
+    "away": { "A": 3.10, "B": 27, "C": 33 },
+    "status": { "task_1": null, "task_2": null, "task_3": null, "task_4": null },
+    "assigned_to": null
+  }
+]
