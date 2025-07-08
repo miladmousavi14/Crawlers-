@@ -1,0 +1,24 @@
+name: Run Crawler-1 (every 30 min)
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"        # اجرای خودکار هر ۳۰ دقیقه
+  workflow_dispatch:              # دکمهٔ دستی «Run workflow»
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps (none for now)
+        run: echo "ready"
+
+      - name: Run crawler-1
+        run: python3 crawler_1.py
